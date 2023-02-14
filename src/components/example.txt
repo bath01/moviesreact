@@ -1,0 +1,39 @@
+import React from "react"
+import logo from "../logo.svg"
+
+import "./Header.css"; 
+// const Header = ({ name, city, status }) 
+
+class Header extends React.Component{
+    render() {
+          // console.log(props);
+          console.log("this",this.props);
+        return (
+            <header className="header-header">
+            <img src={logo} className="header-logo" alt="logo" />
+            <p>
+                name: {this.props.name} /City: {this.props.city} /Status: {this.props.status}
+            </p>
+            <a
+                className="header-link"
+                href="https://reactjs.org"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Learn React
+            </a>
+            </header>
+        );
+    }
+}
+
+
+export default Header
+
+this.setState({ [event.target.name]: event.target.value });
+
+.then((res) => console.log(res));
+
+return <><div>
+          Characters code School</div>
+          <div>{this.state.characters.map(character => <p>{character.name}</p>)}</div></>
